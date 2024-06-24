@@ -80,10 +80,11 @@ function mageModule:SetupMageSpells(allBuffs, enchantments)
                :BuffType("seal")
                :IsDefault(false)
                :SingleFamily({ 30482, -- TBC: Molten Armor 1
-                               43045, 43046 }) -- WotLK: Molten Armor 2, 3
+                               43045, 43046, -- WotLK: Molten Armor 2, 3
+			       428741, 409307 }) -- SoD: Molten Armor
                :RequirePlayerClass("MAGE")
                :Category("class")
-               :RequireTBC()
+               -- :RequireTBC() -- SoD
   -- Mage Armor / magische rüstung
   buffDefModule:createAndRegisterBuff(allBuffs, 22783, nil)
                :BuffType("seal")
